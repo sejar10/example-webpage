@@ -77,14 +77,14 @@
     <h2>Login</h2>
     <form id="loginForm" onsubmit="return validateForm()">
       <div>
-        <label for="username">Your Name:</label>
-        <input type="text" id="username" name="username" placeholder="Enter your name">
+        <label for="username">Enter Your Name:</label>
+        <input type="text" id="username" name="username" placeholder="Your name is the sole key to this space">
       </div>
       <div>
         <input type="submit" value="Login">
       </div>
     </form>
-    <p class="love">Waiting for ❤</p>
+    <p class="love">Waiting for Her ❤</p>
   </div>
 
   <script>
@@ -93,7 +93,10 @@
       
       // Check if the username is the allowed username
       if (username.toLowerCase() !== 'eniya') {
-        alert('Access denied. Invalid username.');
+        alert('Access denied . Not you.');
+      }
+        else {
+        alert(' ❤');
         return false;
       }
       
