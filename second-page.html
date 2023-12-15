@@ -17,7 +17,7 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333;
-      line-height: 0.6;
+      line-height: 1.6;
       margin: 0;
     }
 
@@ -25,7 +25,7 @@
     header {
       background-color: #000000;
       color: #fff;
-      padding: 0px 0;
+      padding: 20px 0;
       text-align: center;
     }
 
@@ -35,19 +35,16 @@
       text-align: center;
       background-size: cover;
       background-position: bottom;
-      padding-top: 5px; /* Adjust top padding */
+      padding-top: 50px; /* Adjust top padding */
       padding-bottom: 20px; /* Adjust bottom padding */
     }
 
     .header-content h1 {
       font-size: 36px;
       margin-bottom: 10px;
-      margin-top: 100px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
-	   padding-top: 5px; /* Adjust top padding */
-      padding-bottom: 20px; /* Adjust bottom padding */
     }
 
     .header-content p {
@@ -67,11 +64,15 @@
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: space-around; /* Evenly space the items */
+      justify-content: center;
     }
 
     nav ul li {
-      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
     }
 
     nav ul li a {
@@ -79,7 +80,7 @@
       text-decoration: none;
       transition: background-color 0.3s ease, color 0.3s ease;
       padding: 8px 15px; /* Adjust padding */
-      border-radius: 50px; /* Add rounded corners */
+      border-radius: 5px; /* Add rounded corners */
       display: flex;
       align-items: center;
     }
@@ -87,7 +88,6 @@
     nav ul li a img {
       height: 30px; /* Adjust height */
       width: auto; /* Maintain aspect ratio */
-      vertical-align: middle; /* Align vertically */
       margin-right: 5px; /* Add space between icon and text */
     }
 
@@ -99,24 +99,22 @@
     /* Main content styles */
     .container {
       overflow: auto;
+      padding: 20px;
     }
 
     .main-content {
-      float: right-center;
-      width: 100%;
-      height: 100%;
       background: #fff;
       background-image: url(https://wallpapercave.com/wp/wp2370538.jpg);
       background-repeat: no-repeat;
       background-position: bottom;
-      background-size: 100%;
+      background-size: cover;
+      padding: 20px;
     }
 
     .main-content h2 {
       font-size: 36px;
       text-align: center;
-      padding: 200px;
-      color: #fff; /* Ensure text is visible */
+      color: #000; /* Text color change */
     }
 
     /* Footer styles */
@@ -125,6 +123,34 @@
       padding: 20px 0;
       background: #000000;
       color: #fff;
+    }
+
+    /* Media Queries for Mobile */
+    @media screen and (max-width: 768px) {
+      .header-content h1 {
+        font-size: 28px;
+      }
+
+      .header-content p {
+        font-size: 16px;
+      }
+
+      nav ul li a {
+        padding: 5px 10px; /* Adjust padding */
+      }
+
+      nav ul li a img {
+        height: 25px; /* Adjust height */
+        margin-right: 3px; /* Adjust margin */
+      }
+
+      .container {
+        padding: 10px;
+      }
+
+      .main-content h2 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
