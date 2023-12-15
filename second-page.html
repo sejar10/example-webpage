@@ -65,10 +65,12 @@
       padding: 0;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap; /* Allows items to wrap */
     }
 
     nav ul li {
       margin-right: 20px;
+      margin-bottom: 10px; /* Adds space between rows */
     }
 
     nav ul li:last-child {
@@ -125,7 +127,7 @@
       color: #fff;
     }
 
-    /* Media Queries for Mobile */
+    /* Media Queries */
     @media screen and (max-width: 768px) {
       .header-content h1 {
         font-size: 28px;
@@ -135,13 +137,18 @@
         font-size: 16px;
       }
 
+      nav ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
       nav ul li a {
-        padding: 5px 10px; /* Adjust padding */
+        padding: 5px 10px;
       }
 
       nav ul li a img {
-        height: 25px; /* Adjust height */
-        margin-right: 3px; /* Adjust margin */
+        height: 25px;
+        margin-right: 3px;
       }
 
       .container {
@@ -175,7 +182,7 @@
 
   <div class="container">
     <section class="main-content">
-      <h2></h2>
+      <h2>Main Content</h2>
     </section>
   </div>
 
