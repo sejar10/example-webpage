@@ -10,11 +10,12 @@ body.login-page {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("https://files.123freevectors.com/wp-content/original/131607-pink-and-white-polygon-pattern-background.jpg"); /* Gradient background */
+  background-image: url("https://i.pinimg.com/originals/b6/90/c8/b690c8596ffa2ab588a28d2e337522d7.jpg"); /* Gradient background */
 }
 
 .login-container {
   /* ... (existing login container styles) ... */
+  width: 300px;
 }
 
 /* ... (existing login page styles) ... */
